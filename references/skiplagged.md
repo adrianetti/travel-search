@@ -38,9 +38,11 @@ curl -s -X POST "https://mcp.skiplagged.com/mcp" \
   -H "Accept: application/json, text/event-stream" \
   -d '{
     "jsonrpc":"2.0","id":2,"method":"tools/call",
-    "params":{"name":"sk_resolve_iata","arguments":{"city":"Rome"}}
+    "params":{"name":"sk_resolve_iata","arguments":{"input":"Rome"}}
   }'
 ```
+
+Note: The parameter is `input`, not `city`.
 
 ## Flight Search
 
