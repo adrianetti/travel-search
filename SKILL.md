@@ -1,6 +1,6 @@
 ---
 name: travel-search
-description: "Search flights, hotels, car rentals, and ferries across multiple providers using free APIs. Use when: user asks about flights, travel, hotels, accommodation, car rentals, ferry routes, trip planning, finding cheap flights, comparing travel options, or planning multi-city routes. Covers Kiwi.com (flights), Skiplagged (flights + hotels + cars), Trivago (hotels), Ferryhopper (ferries), and Google Flights via fli. All primary providers are free with no API key required."
+description: "Search flights, hotels, car rentals, and ferries across multiple providers using free APIs. Plan complete trip itineraries with real prices and booking links. Use when: user asks about flights, travel, hotels, accommodation, car rentals, ferry routes, trip planning, vacation planning, itinerary generation, finding cheap flights, comparing travel options, planning multi-city routes, or budget travel. Covers Kiwi.com (flights), Skiplagged (flights + hotels + cars), Trivago (hotels), Ferryhopper (ferries), and Google Flights via fli. All primary providers are free with no API key required."
 metadata: { "openclaw": { "emoji": "✈️", "requires": { "bins": ["curl"] } } }
 ---
 
@@ -17,6 +17,7 @@ Search flights, hotels, car rentals, and ferries across multiple free providers 
 | Hotels (price comparison) | Trivago | [hotels.md](references/hotels.md) |
 | Ferries | Ferryhopper | [ferries.md](references/ferries.md) |
 | Flights (Google Flights) | fli | [google-flights.md](references/google-flights.md) |
+| Full trip itinerary | Multi-provider | [trip-planner.md](references/trip-planner.md) |
 
 ## How It Works
 
@@ -64,6 +65,11 @@ Response format: SSE with `event: message` + `data: {JSON}`. Parse the `data` li
 1. Search flights on Kiwi + Skiplagged
 2. Check ferries if coastal/island route
 3. Compare and recommend best value (price vs time)
+
+### User wants a full trip planned
+1. Read [trip-planner.md](references/trip-planner.md) for the complete workflow
+2. Gather requirements → search flights → search hotels → build budget → generate itinerary
+3. Present with booking links and day-by-day plan
 
 ## Presenting Results
 

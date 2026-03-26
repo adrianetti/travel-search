@@ -9,12 +9,14 @@
 - [x] Helper script (mcp-call.sh)
 - [x] Published on ClawHub + GitHub
 
-## v1.1.0 — Trip Planner
-- [ ] Full itinerary generation: flight + hotel + day-by-day plan
-- [ ] Budget breakdown: flight + hotel + estimated food + local transport
-- [ ] "Plan me 5 days in Rome for €800" → complete trip with real prices
-- [ ] Multi-provider combination (cheapest flight + best-value hotel)
-- [ ] Add `references/trip-planner.md`
+## v1.1.0 ✅ — Trip Planner
+- [x] Full itinerary generation: flight + hotel + day-by-day plan
+- [x] Budget breakdown: flight + hotel + estimated food + local transport
+- [x] "Plan me 5 days in Rome for €800" → complete trip with real prices
+- [x] Multi-provider combination (cheapest flight + best-value hotel)
+- [x] Daily cost estimates by region (Europe, Asia, Latin America, etc.)
+- [x] Day-by-day itinerary with morning/afternoon/evening activities
+- [x] Add `references/trip-planner.md`
 
 ## v1.2.0 — Smart Price Features
 - [ ] Price calendar: "When is it cheapest to fly to Tokyo?"

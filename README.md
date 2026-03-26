@@ -62,6 +62,8 @@ Once installed, just ask your agent naturally:
 - *"Search ferries from Piraeus to Santorini in July"*
 - *"Where can I fly cheap from Madrid?"* (uses Skiplagged's "anywhere" search)
 - *"When is it cheapest to fly to London?"* (flexible date calendar)
+- *"Plan me a 5-day trip to Rome with a budget of €800"* (full itinerary with prices)
+- *"Build an itinerary for 2 weeks in Japan"* (day-by-day plan + flights + hotels)
 
 ## How It Works
 
@@ -93,7 +95,7 @@ travel-search/
 
 ## Roadmap
 
-- **v1.1** — Trip Planner (full itinerary: flight + hotel + day-by-day + budget)
+- **v1.1** ✅ — Trip Planner (full itinerary: flight + hotel + day-by-day + budget)
 - **v1.2** — Smart Price Features (price calendars, cross-provider comparison)
 - **v1.3** — Airbnb Integration (short-stay comparison)
 - **v1.4** — Multi-city Optimizer (cheapest route across multiple cities)
