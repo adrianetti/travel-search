@@ -59,9 +59,58 @@
 - [x] Concise presentation format (8-12 lines, first-time visitor essentials)
 - [x] Add `references/travel-intel.md`
 
-## Future Ideas
+## v2.0 Roadmap — Next Level
+
+### v2.1 — Train & Bus Search
+- [ ] Train APIs (Trainline, Renfe, Trenitalia, DB, SNCF)
+- [ ] Bus APIs (Flixbus, ALSA, Eurolines, Greyhound)
+- [ ] Auto-suggest train/bus when cheaper or more convenient than flying
+- [ ] Integrated into multi-city optimizer: mixed transport routes (fly A→B, train B→C)
+
+### v2.2 — Price Tracking & Alerts
+- [ ] "Track this flight and alert me if price drops"
+- [ ] Periodic price monitoring via cron/heartbeat
+- [ ] Historical price context ("this route is usually $X, right now it's $Y")
+- [ ] Push notification to user when target price hit
+
+### v2.3 — Packing & Preparation
+- [ ] Smart packing list based on destination + weather + trip duration + vibe
+- [ ] Checklist: documents, insurance, vaccinations, apps to download
+- [ ] Destination-specific prep ("download offline maps", "get Japan Rail Pass", etc.)
+
+### v2.4 — Group Trip Coordinator
+- [ ] Split costs calculator for group trips
+- [ ] Shared itinerary format (exportable, collaborative)
+- [ ] Voting system: "everyone pick your top 3 cities" → optimize from group preferences
+- [ ] Budget fairness: different budget tiers within same group
+
+### v2.5 — Booking Memory & Loyalty
+- [ ] Remember user's past searches and preferences
+- [ ] "I always prefer window seats and morning flights"
+- [ ] Track loyalty programs: "I have miles on United, use them when possible"
+- [ ] Saved destinations wishlist: "I want to go here someday"
+
+### v2.6 — Real-Time Trip Companion
+- [ ] Day-of assistance: "what's open near me right now?"
+- [ ] Weather alerts during trip: "rain expected at 3 PM, move outdoor plans to morning"
+- [ ] Restaurant recommendations based on current location + vibe
+- [ ] "My flight got cancelled, what are my options?"
+
+### v2.7 — Experiences & Activities
+- [ ] Integration with activity/tour booking APIs (GetYourGuide, Viator)
+- [ ] "Find me a cooking class in Rome" → real prices + booking
+- [ ] Event detection: "there's a festival happening during your dates!"
+- [ ] Free walking tour recommendations per city
+
+### v2.8 — Travel Insurance Comparison
+- [ ] Compare travel insurance options
+- [ ] "Do I need insurance for this trip?"
+- [ ] Coverage recommendations based on destination + activities
+
+## Future Ideas (when APIs/tech allows)
 - [ ] Property/rental search (Idealista, Fotocasa — when APIs become available)
-- [ ] Train search (Trainline, Renfe APIs)
-- [ ] Bus search (Flixbus, ALSA APIs)
-- [ ] Travel alerts and price tracking
-- [ ] Packing list generator based on destination + weather
+- [ ] Long-term stay optimization (1-6 months, digital nomad focused)
+- [ ] Carbon footprint calculation and eco-routing
+- [ ] AR/photo preview of destinations
+- [ ] Trip journal/diary generator from photos
+- [ ] Offline mode: downloadable trip info packet
