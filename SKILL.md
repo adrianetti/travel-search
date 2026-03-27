@@ -52,7 +52,7 @@ Read [price-tools.md](references/price-tools.md) for the **decision tree and com
 - How to present the single best recommendation + alternatives
 - Flexible dates, anywhere destinations, round-trip optimization
 
-For full trip itineraries, also read [trip-planner.md](references/trip-planner.md).
+For full trip itineraries, also read [trip-planner.md](references/trip-planner.md). It includes a **guided intake questionnaire** (7 quick questions in one message) for when users want help figuring out what they want.
 
 ### Core principle
 **Always search multiple providers, score results, and present ONE best recommendation** with alternatives. The user should never have to compare — that's the agent's job. See [price-tools.md](references/price-tools.md) for the value scoring system.

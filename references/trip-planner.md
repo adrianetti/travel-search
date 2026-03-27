@@ -10,7 +10,39 @@ The agent already understands human intent. This document provides the **structu
 
 ## Step 1: Profile the Trip
 
-Extract from the user's request. **Ask only what's missing and critical** — destination and approximate dates at minimum. Everything else: infer from context, default intelligently.
+There are **two modes** for gathering trip info:
+
+### Mode A: Quick (default)
+When the user gives a direct request ("find me flights to Rome"), extract what you can from their message and **ask only what's truly missing** (usually just dates or origin). Infer everything else. Most users want fast answers, not questionnaires.
+
+### Mode B: Guided Intake
+When the user asks for a **full trip plan**, wants help deciding, or explicitly asks for a questionnaire, use this **conversational intake**. Ask in ONE message, not one question at a time:
+
+```
+Let's plan your trip! A few quick questions:
+
+1. 📍 Where do you want to go? (city, country, or "surprise me")
+2. 🛫 Where are you flying from?
+3. 📅 When? (specific dates, or flexible like "sometime in June")
+4. ⏱️ How many days?
+5. 👥 Who's going? (solo, couple, family, friends + how many)
+6. 💰 Budget range? (budget / mid-range / premium / no limit)
+7. ✨ What's the vibe? What do you want to feel or experience?
+   (examples: "eat everything", "chill on a beach", "see all the history",
+   "party", "romantic", "adventure", or just tell me in your own words)
+
+Answer as many or as few as you want — I'll figure out the rest!
+```
+
+**Rules for the intake:**
+- **Always in ONE message.** Never drip-feed questions one by one.
+- **All questions are optional except destination.** If they only answer 3 of 7, work with that.
+- **Accept any format.** Full sentences, single words, emojis, bullet points — all valid.
+- **Never repeat questions they already answered** in their original message.
+- **Skip the intake entirely** if the user already gave enough info to work with.
+- **Adapt language** to the user's language (if they write in Spanish, ask in Spanish).
+
+After receiving answers (or partial answers), proceed to profiling:
 
 ### Core Dimensions
 
