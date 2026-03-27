@@ -119,6 +119,14 @@ PRs welcome! Especially for:
 - Bug fixes and edge cases
 - Translation of SKILL.md descriptions
 
+## Current Version
+
+**v1.5.0** — Full roadmap v1.0-v1.5 complete. See [ROADMAP.md](ROADMAP.md) for v2.0 plans.
+
+## Project Status
+
+✅ Active, stable, published on ClawHub and GitHub.
+
 ## License
 
 MIT
