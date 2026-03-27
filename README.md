@@ -48,9 +48,9 @@ cp -r travel-search ~/.openclaw/workspace/skills/
 | [Kiwi.com](https://kiwi.com) | Flights | Worldwide, creative routing | 🆓 Free |
 | [Skiplagged](https://skiplagged.com) | Flights + Hotels + Cars | Worldwide, hidden city fares | 🆓 Free |
 | [Trivago](https://trivago.com) | Hotels | Worldwide, price comparison | 🆓 Free |
-| [Airbnb MCP](https://github.com/borski/mcp-server-airbnb) | Apartments / homes | Short stays, groups, workcations | 🆓 Free (requires local `npx`) |
+| [Airbnb MCP](https://github.com/borski/mcp-server-airbnb) | Apartments / homes | Short stays, groups, workcations | 🆓 Free (separate install required) |
 | [Ferryhopper](https://ferryhopper.com) | Ferries | 33 countries, 190+ operators | 🆓 Free |
-| [Google Flights](https://github.com/punitarani/fli) | Flights | Widest coverage | 🆓 Free (requires `pipx install flights`) |
+| [Google Flights](https://github.com/punitarani/fli) | Flights | Widest coverage | 🆓 Free (separate install required) |
 
 All providers use the [MCP protocol](https://modelcontextprotocol.io/) (JSON-RPC 2.0 over HTTP) — no browser automation, no scraping.
 

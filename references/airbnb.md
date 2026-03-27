@@ -1,6 +1,6 @@
 # Airbnb — Short-Stay & Apartment Search
 
-Airbnb is **optional** and runs as a **local MCP server** via `npx`.
+Airbnb is **optional** and runs as a **separate local MCP server** that the user installs independently.
 
 Use it when the user wants:
 - apartments, homes, villas, cabins, unique stays
@@ -11,35 +11,25 @@ Use it when the user wants:
 
 ## Install / Run
 
-Node.js 18+ required.
+Airbnb MCP is a separate package (`@openbnb/mcp-server-airbnb`). The user must install it themselves before use. Node.js 18+ required.
 
-Recommended MCP config:
+**Installation (user must run manually):**
+```bash
+npm install -g @openbnb/mcp-server-airbnb
+```
 
+**MCP config (after installation):**
 ```json
 {
   "mcpServers": {
     "airbnb": {
-      "command": "npx",
-      "args": ["-y", "@openbnb/mcp-server-airbnb"]
+      "command": "mcp-server-airbnb"
     }
   }
 }
 ```
 
-Optional testing-only override (less safe):
-
-```json
-{
-  "mcpServers": {
-    "airbnb": {
-      "command": "npx",
-      "args": ["-y", "@openbnb/mcp-server-airbnb", "--ignore-robots-txt"]
-    }
-  }
-}
-```
-
-Default posture: respect robots.txt.
+Respects robots.txt by default. Do not override this.
 
 ## Tools
 
@@ -54,7 +44,6 @@ Parameters:
 - `adults`, `children`, `infants`, `pets` (optional)
 - `minPrice`, `maxPrice` (optional) — nightly price range
 - `cursor` (optional) — pagination
-- `ignoreRobotsText` (optional) — per-request override
 
 ### `airbnb_listing_details`
 
@@ -64,7 +53,6 @@ Parameters:
 - `id` (required)
 - `checkin` / `checkout` (optional)
 - `adults`, `children`, `infants`, `pets` (optional)
-- `ignoreRobotsText` (optional)
 
 Returns rich details such as amenities, policies, highlights, location data, and direct link.
 
