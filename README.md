@@ -12,6 +12,8 @@ Search flights, hotels, car rentals, and ferries across multiple providers — a
 
 🏨 **Hotels** — Compare prices across booking sites via Skiplagged and Trivago
 
+🏠 **Airbnb** — Compare apartments and homes against hotels for the same stay (optional local MCP)
+
 🚗 **Car Rentals** — Find the best deals via Skiplagged
 
 ⛴️ **Ferries** — Search 190+ operators across 33 countries via Ferryhopper
@@ -46,6 +48,7 @@ cp -r travel-search ~/.openclaw/workspace/skills/
 | [Kiwi.com](https://kiwi.com) | Flights | Worldwide, creative routing | 🆓 Free |
 | [Skiplagged](https://skiplagged.com) | Flights + Hotels + Cars | Worldwide, hidden city fares | 🆓 Free |
 | [Trivago](https://trivago.com) | Hotels | Worldwide, price comparison | 🆓 Free |
+| [Airbnb MCP](https://github.com/borski/mcp-server-airbnb) | Apartments / homes | Short stays, groups, workcations | 🆓 Free (requires local `npx`) |
 | [Ferryhopper](https://ferryhopper.com) | Ferries | 33 countries, 190+ operators | 🆓 Free |
 | [Google Flights](https://github.com/punitarani/fli) | Flights | Widest coverage | 🆓 Free (requires `pipx install flights`) |
 
@@ -57,6 +60,8 @@ Once installed, just ask your agent naturally:
 
 - *"Find me cheap flights from Madrid to Tokyo in April"*
 - *"Compare hotels in Rome for April 10-14"*
+- *"What’s cheaper, Airbnb or hotel in Barcelona for 5 nights?"*
+- *"Find the best apartment stay in Lisbon for a month"*
 - *"What's the cheapest way to get from Oviedo to Rome?"*
 - *"Find car rentals in Barcelona for next week"*
 - *"Search ferries from Piraeus to Santorini in July"*
@@ -86,6 +91,7 @@ travel-search/
 │   ├── flights.md                   # Kiwi.com API docs
 │   ├── skiplagged.md                # Skiplagged API docs  
 │   ├── hotels.md                    # Trivago API docs
+│   ├── airbnb.md                    # Airbnb MCP docs
 │   ├── ferries.md                   # Ferryhopper API docs
 │   └── google-flights.md            # fli / Google Flights docs
 ├── scripts/
@@ -97,7 +103,7 @@ travel-search/
 
 - **v1.1** ✅ — Trip Planner (full itinerary: flight + hotel + day-by-day + budget)
 - **v1.2** ✅ — Smart Price & Value Engine (cross-provider comparison, value scoring, price calendars, deal detection)
-- **v1.3** — Airbnb Integration (short-stay comparison)
+- **v1.3** ✅ — Airbnb Integration (short-stay vs hotel comparison)
 - **v1.4** — Multi-city Optimizer (cheapest route across multiple cities)
 - **v1.5** — Travel Intel (weather, visa, currency, local transport)
 

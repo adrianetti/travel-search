@@ -30,11 +30,13 @@
 - [x] Hidden cost flagging (baggage, breakfast, insurance)
 - [x] Add `references/price-tools.md`
 
-## v1.3.0 — Airbnb Integration
-- [ ] Integrate borski/mcp-server-airbnb
-- [ ] Short-stay vs hotel automatic comparison
-- [ ] "What's cheaper, Airbnb or hotel in Barcelona for 5 nights?"
-- [ ] Add `references/airbnb.md`
+## v1.3.0 ✅ — Airbnb Integration
+- [x] Integrate Airbnb MCP docs (`@openbnb/mcp-server-airbnb` via local `npx`)
+- [x] Short-stay vs hotel automatic comparison workflow
+- [x] Defaults for when Airbnb wins vs hotels by trip type
+- [x] Airbnb value scoring (space, amenities, privacy, policies)
+- [x] "What's cheaper, Airbnb or hotel in Barcelona for 5 nights?"
+- [x] Add `references/airbnb.md`
 
 ## v1.4.0 — Multi-city Optimizer
 - [ ] Route optimization: "Visit Rome, Paris, Amsterdam in 10 days"
