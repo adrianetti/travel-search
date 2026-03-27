@@ -38,11 +38,16 @@
 - [x] "What's cheaper, Airbnb or hotel in Barcelona for 5 nights?"
 - [x] Add `references/airbnb.md`
 
-## v1.4.0 — Multi-city Optimizer
-- [ ] Route optimization: "Visit Rome, Paris, Amsterdam in 10 days"
-- [ ] Cheapest city order based on inter-city flight prices
-- [ ] Smart routing with budget constraints
-- [ ] Add `references/multi-city.md`
+## v1.4.0 ✅ — Multi-city Optimizer
+- [x] Route optimization: "Visit Rome, Paris, Amsterdam in 10 days"
+- [x] Price matrix builder for inter-city flights
+- [x] Geographic flow optimization (minimize backtracking)
+- [x] Smart day allocation by city size
+- [x] Open-jaw flight detection (fly into A, out of C)
+- [x] Hub city awareness for cheaper first/last legs
+- [x] Train/bus suggestion for short hops (<500km)
+- [x] Cluster-based optimization for 5+ cities
+- [x] Add `references/multi-city.md`
 
 ## v1.5.0 — Travel Intel
 - [ ] Destination weather forecast integration

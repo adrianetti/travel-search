@@ -20,6 +20,7 @@ Search flights, hotels, car rentals, and ferries across multiple free providers 
 | Full trip itinerary | Multi-provider | [trip-planner.md](references/trip-planner.md) |
 | Best deal / price compare | Multi-provider | [price-tools.md](references/price-tools.md) |
 | Airbnb / apartment stays | Airbnb MCP | [airbnb.md](references/airbnb.md) |
+| Multi-city route optimizer | Multi-provider | [multi-city.md](references/multi-city.md) |
 
 ## How It Works
 
@@ -54,6 +55,9 @@ Read [price-tools.md](references/price-tools.md) for the **decision tree and com
 - Flexible dates, anywhere destinations, round-trip optimization
 
 For full trip itineraries, also read [trip-planner.md](references/trip-planner.md). It includes a **guided intake questionnaire** (7 quick questions in one message) for when users want help figuring out what they want.
+
+### User wants to visit multiple cities
+Read [multi-city.md](references/multi-city.md) for route optimization. It finds the cheapest city order, allocates days, and handles open-jaw flights.
 
 ### Core principle
 **Always search multiple providers, score results, and present ONE best recommendation** with alternatives. The user should never have to compare — that's the agent's job. See [price-tools.md](references/price-tools.md) for the value scoring system.

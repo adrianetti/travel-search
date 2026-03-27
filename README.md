@@ -69,6 +69,8 @@ Once installed, just ask your agent naturally:
 - *"When is it cheapest to fly to London?"* (flexible date calendar)
 - *"Plan me a 5-day trip to Rome with a budget of €800"* (full itinerary with prices)
 - *"Build an itinerary for 2 weeks in Japan"* (day-by-day plan + flights + hotels)
+- *"I want to visit Rome, Paris, and Amsterdam in 10 days — what's the best route?"*
+- *"Eurotrip: 5 cities in 3 weeks, optimize for cheapest flights"*
 
 ## How It Works
 
@@ -104,7 +106,7 @@ travel-search/
 - **v1.1** ✅ — Trip Planner (full itinerary: flight + hotel + day-by-day + budget)
 - **v1.2** ✅ — Smart Price & Value Engine (cross-provider comparison, value scoring, price calendars, deal detection)
 - **v1.3** ✅ — Airbnb Integration (short-stay vs hotel comparison)
-- **v1.4** — Multi-city Optimizer (cheapest route across multiple cities)
+- **v1.4** ✅ — Multi-city Optimizer (cheapest route, day allocation, open-jaw, train alternatives)
 - **v1.5** — Travel Intel (weather, visa, currency, local transport)
 
 See [ROADMAP.md](ROADMAP.md) for details.
