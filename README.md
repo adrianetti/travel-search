@@ -96,7 +96,7 @@ travel-search/
 ## Roadmap
 
 - **v1.1** ✅ — Trip Planner (full itinerary: flight + hotel + day-by-day + budget)
-- **v1.2** — Smart Price Features (price calendars, cross-provider comparison)
+- **v1.2** ✅ — Smart Price & Value Engine (cross-provider comparison, value scoring, price calendars, deal detection)
 - **v1.3** — Airbnb Integration (short-stay comparison)
 - **v1.4** — Multi-city Optimizer (cheapest route across multiple cities)
 - **v1.5** — Travel Intel (weather, visa, currency, local transport)

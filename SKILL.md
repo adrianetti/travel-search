@@ -1,6 +1,6 @@
 ---
 name: travel-search
-description: "Search flights, hotels, car rentals, and ferries across multiple providers using free APIs. Plan complete trip itineraries with real prices and booking links. Use when: user asks about flights, travel, hotels, accommodation, car rentals, ferry routes, trip planning, vacation planning, itinerary generation, finding cheap flights, comparing travel options, planning multi-city routes, or budget travel. Covers Kiwi.com (flights), Skiplagged (flights + hotels + cars), Trivago (hotels), Ferryhopper (ferries), and Google Flights via fli. All primary providers are free with no API key required."
+description: "Find the best travel deals by searching and comparing flights, hotels, car rentals, and ferries across multiple providers simultaneously. Smart value scoring picks the optimal price-quality-convenience balance automatically. Plan complete trip itineraries with real prices and direct booking links. Use when: user asks about flights, travel, hotels, accommodation, car rentals, ferry routes, trip planning, vacation planning, itinerary generation, finding cheap flights, best deals, comparing travel options, flexible dates, cheapest time to fly, price calendars, planning multi-city routes, or budget travel. Covers Kiwi.com (flights), Skiplagged (flights + hotels + cars), Trivago (hotels), Ferryhopper (ferries), and Google Flights via fli. All primary providers are free with no API key required."
 metadata: { "openclaw": { "emoji": "✈️", "requires": { "bins": ["curl"] } } }
 ---
 
@@ -18,6 +18,7 @@ Search flights, hotels, car rentals, and ferries across multiple free providers 
 | Ferries | Ferryhopper | [ferries.md](references/ferries.md) |
 | Flights (Google Flights) | fli | [google-flights.md](references/google-flights.md) |
 | Full trip itinerary | Multi-provider | [trip-planner.md](references/trip-planner.md) |
+| Best deal / price compare | Multi-provider | [price-tools.md](references/price-tools.md) |
 
 ## How It Works
 
@@ -44,32 +45,17 @@ Response format: SSE with `event: message` + `data: {JSON}`. Parse the `data` li
 
 ## Decision Guide
 
-### User wants flights
-1. **Start with Kiwi** — best for creative routing (combining airlines) and European routes
-2. **Cross-check with Skiplagged** — hidden city fares can be cheaper
-3. **Use fli (Google Flights)** if installed — widest coverage, flexible date search
-4. Present the best 3-5 options with price, duration, stops, and booking link
+### User wants flights, hotels, cars, ferries, or trip planning
+Read [price-tools.md](references/price-tools.md) for the **decision tree and comparison engine**. It covers:
+- Which providers to search and when
+- How to compare and score results across providers
+- How to present the single best recommendation + alternatives
+- Flexible dates, anywhere destinations, round-trip optimization
 
-### User wants hotels
-1. **Start with Skiplagged** — good hotel + flight bundles
-2. **Cross-check with Trivago** — compares across booking sites
-3. Present with nightly rate, total price, rating, and booking link
+For full trip itineraries, also read [trip-planner.md](references/trip-planner.md).
 
-### User wants car rental
-1. Use **Skiplagged** `sk_cars_search`
-
-### User wants ferries
-1. Use **Ferryhopper** — 33 countries, 190+ operators
-
-### User wants "cheapest way to get from A to B"
-1. Search flights on Kiwi + Skiplagged
-2. Check ferries if coastal/island route
-3. Compare and recommend best value (price vs time)
-
-### User wants a full trip planned
-1. Read [trip-planner.md](references/trip-planner.md) for the complete workflow
-2. Gather requirements → search flights → search hotels → build budget → generate itinerary
-3. Present with booking links and day-by-day plan
+### Core principle
+**Always search multiple providers, score results, and present ONE best recommendation** with alternatives. The user should never have to compare — that's the agent's job. See [price-tools.md](references/price-tools.md) for the value scoring system.
 
 ## Presenting Results
 

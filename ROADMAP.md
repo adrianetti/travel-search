@@ -18,11 +18,17 @@
 - [x] Day-by-day itinerary with morning/afternoon/evening activities
 - [x] Add `references/trip-planner.md`
 
-## v1.2.0 — Smart Price Features
-- [ ] Price calendar: "When is it cheapest to fly to Tokyo?"
-- [ ] Cross-provider comparison (Kiwi vs Skiplagged vs Google Flights → show THE best)
-- [ ] Flexible date optimizer using sk_flex_departure_calendar + fli search_dates
-- [ ] Add `references/price-tools.md`
+## v1.2.0 ✅ — Smart Price & Value Engine
+- [x] Value scoring system: price × quality × convenience → single best recommendation
+- [x] Cross-provider comparison engine (Kiwi + Skiplagged parallel search, deduplication, scoring)
+- [x] Price calendar via sk_flex_departure_calendar and sk_flex_return_calendar
+- [x] "Anywhere" search for flexible destinations (sk_destinations_anywhere)
+- [x] Hotel scoring: rating × price × location × amenities
+- [x] Deal detection with benchmarks ("🔥 40% below average!")
+- [x] Complete decision tree: what to search when
+- [x] Trade-off explanations for every alternative
+- [x] Hidden cost flagging (baggage, breakfast, insurance)
+- [x] Add `references/price-tools.md`
 
 ## v1.3.0 — Airbnb Integration
 - [ ] Integrate borski/mcp-server-airbnb
