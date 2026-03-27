@@ -107,7 +107,7 @@ travel-search/
 - **v1.2** ✅ — Smart Price & Value Engine (cross-provider comparison, value scoring, price calendars, deal detection)
 - **v1.3** ✅ — Airbnb Integration (short-stay vs hotel comparison)
 - **v1.4** ✅ — Multi-city Optimizer (cheapest route, day allocation, open-jaw, train alternatives)
-- **v1.5** — Travel Intel (weather, visa, currency, local transport)
+- **v1.5** ✅ — Travel Intel (weather, visa, currency, transport, safety, connectivity)
 
 See [ROADMAP.md](ROADMAP.md) for details.
 

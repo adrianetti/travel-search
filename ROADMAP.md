@@ -49,12 +49,15 @@
 - [x] Cluster-based optimization for 5+ cities
 - [x] Add `references/multi-city.md`
 
-## v1.5.0 — Travel Intel
-- [ ] Destination weather forecast integration
-- [ ] Visa requirements (basic)
-- [ ] Currency and exchange rates
-- [ ] Local transport tips
-- [ ] Add `references/travel-intel.md`
+## v1.5.0 ✅ — Travel Intel
+- [x] Weather forecasts via wttr.in + best travel season patterns by region
+- [x] Visa quick reference with passport-power tiers
+- [x] Currency, cards, ATMs, and tipping culture by region
+- [x] Local transport guides: airport transfers + city transit for major cities
+- [x] Safety notes (scams, neighborhoods, health) when relevant
+- [x] Power plugs and connectivity (SIM/eSIM, WiFi)
+- [x] Concise presentation format (8-12 lines, first-time visitor essentials)
+- [x] Add `references/travel-intel.md`
 
 ## Future Ideas
 - [ ] Property/rental search (Idealista, Fotocasa — when APIs become available)

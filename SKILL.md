@@ -21,6 +21,7 @@ Search flights, hotels, car rentals, and ferries across multiple free providers 
 | Best deal / price compare | Multi-provider | [price-tools.md](references/price-tools.md) |
 | Airbnb / apartment stays | Airbnb MCP | [airbnb.md](references/airbnb.md) |
 | Multi-city route optimizer | Multi-provider | [multi-city.md](references/multi-city.md) |
+| Destination intel (weather, visa, transport) | General knowledge + wttr.in | [travel-intel.md](references/travel-intel.md) |
 
 ## How It Works
 
